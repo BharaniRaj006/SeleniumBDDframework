@@ -8,7 +8,8 @@ Basic automation test framework following action and page object models, using S
   
 # Running the tests
 
-Simply you can run the test by clicking on Run as Junit test in Eclipse
+JUnit - used as the main entry point for running the Cucumber tests and its assertion test methods.
+Simply execute the test as Junit test.
 
 # Reports Used 
 
