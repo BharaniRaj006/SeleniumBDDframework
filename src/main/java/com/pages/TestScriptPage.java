@@ -2,12 +2,17 @@ package com.pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 
 public class TestScriptPage {
@@ -72,11 +77,22 @@ public class TestScriptPage {
 		
 		
 		public void lowestPriceProduct()
-		{		
-			String item = driver.findElement(lowestprice).getText();
-			System.out.println("** THE LOWEST PRICE PRODUCT IS ** = " + item);
-			driver.findElement(addtocart).click();
-			driver.findElement(home).click();			
+		
+		{List<WebElement> price = driver.findElements(container);
+		List<String> prices = new ArrayList<String>();
+		for (WebElement e : price)
+		{
+		    prices.add(e.getText());
+		}
+		List<String> sortedPrices = new ArrayList<String>(prices);
+		// sort the list
+		Collections.sort(sortedPrices);
+		// true if the prices are sorted
+		System.out.println(sortedPrices.equals(prices));	
+		String item = driver.findElement(lowestprice).getText();
+		System.out.println("** THE LOWEST PRICE PRODUCT IS ** = " + item);
+		driver.findElement(addtocart).click();
+		driver.findElement(home).click();			
 		}
 		
 		

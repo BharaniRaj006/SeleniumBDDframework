@@ -1,14 +1,14 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "643e6a18-ffb3-4fb1-bbf5-9365f3d45538",
-    "feature": "Adding items to the cart",
-    "scenario": "Adding items to the cart",
-    "start": 1633046062470,
+    "id": "7b64f14e-6ee3-4fd1-a64b-8cf6472c5b04",
+    "feature": "Add the lowest price item to my cart",
+    "scenario": "Add the lowest price item to my cart",
+    "start": 1633053031795,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1633046075419,
+    "end": 1633053044940,
     "className": "passed"
   }
 ]);
