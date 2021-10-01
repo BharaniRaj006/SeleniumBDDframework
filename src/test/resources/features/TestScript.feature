@@ -1,6 +1,6 @@
-Feature: Adding items to the cart
+Feature: Add the lowest price item to my cart
 
-Scenario: Adding items to the cart
+Scenario: Add the lowest price item to my cart
 Given I add four different products to my wish list
 When  I view my wishlist table
 Then  I find total four selected items in my Wishlist

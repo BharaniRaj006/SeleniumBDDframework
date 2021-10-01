@@ -43,7 +43,6 @@ public class TestScriptSteps {
 
 	@When("I search for lowest price product")
 	public void i_search_for_lowest_price_product() {
-
 		testScriptPage.lowestPriceProduct();
 	}
 
